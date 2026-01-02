@@ -1,0 +1,100 @@
+/*
+  (っ˘̩╭╮˘̩)っ
+  移动端适配也不容易呢~
+  请不要复制走好吗？
+  ( ˘･з･)
+  自己写代码才能学到东西！
+  ٩(◕‿◕｡)۶
+*/
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 70%;
+    }
+    nav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body, html {
+        min-width: 0;
+    }
+    .container {
+        width: auto;
+        margin: 0 5%;
+    }
+    nav {
+        padding: 15px 5%;
+        overflow: auto;
+        font-size: 13px;
+        left: 0;
+        top: inherit;
+        bottom: 0;
+        transform: rotate(0deg) translateZ(0);
+        transform-origin: 0 100%;
+        white-space: nowrap;
+        width: 90%;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .8));
+    }
+    .ch {
+        padding: 40px 0;
+    }
+    .hello {
+        width: 90%;
+        padding: 5%;
+        text-align: center;
+        bottom: 50%;
+    }
+    .hello .circle {
+        float: none;
+        margin-right: 0;
+    }
+    .hello h2 {
+        padding-top: 0;
+    }
+    .hello h1, .hello h2 {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .hello .circle {
+        padding: 20px;
+    }
+    .hello .circle span {
+        margin: 0 5px;
+        width: 10px;
+        height: 10px;
+    }
+    .hello h1 {
+        font-size: 26px;
+    }
+    .countdown-wrapper {
+        gap: 10px;
+    }
+    .countdown-card {
+        min-width: 100px;
+        padding: 20px 15px;
+    }
+    .countdown-number {
+        font-size: 2.5rem;
+    }
+    .countdown-label {
+        font-size: 0.85rem;
+    }
+    .time-display {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+    .current-time {
+        font-size: 11px;
+    }
+    .date-info, .week-info {
+        font-size: 9px;
+    }
+    .footer {
+        padding-bottom: 100px;
+    }
+    .footer h3, .footer p {
+        letter-spacing: .2em;
+    }
+}
