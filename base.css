@@ -1,0 +1,41 @@
+/*
+  ૮ ˶ᵔ ᵕ ᵔ˶ ა
+  喵~ 你在干什么呀？
+  不可以爬取别人的CSS哦！
+  (´･ω･`)
+  请尊重原创，谢谢喵~
+  ₍ᐢ•ﻌ•ᐢ₎*･ﾟ｡
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+}
+
+body, html {
+    font-family: Microsoft YaHei, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    line-height: 1.5;
+    min-width: 1150px;
+    background-color: #0a0a1e;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+.intro {
+    position: relative;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.chatbox > .line {
+    display: none;
+}
