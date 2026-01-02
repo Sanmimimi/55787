@@ -1,0 +1,76 @@
+/*
+  ✧*｡٩(ˊᗜˋ*)و✧*｡
+  哇哦~ 你发现了动画CSS！
+  但是...不可以拿走哦！
+  (｡･ω･｡)ﾉ♡
+  自己学习更有趣呢~
+  ꒰ ⑅ •ᴗ• ⑅ ꒱
+*/
+
+@keyframes fadedown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+@keyframes encouragementBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes flameWave {
+    0%, 100% {
+        transform: scaleY(1) rotate(0deg);
+    }
+    50% {
+        transform: scaleY(1.2) rotate(5deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes progressin {
+    0% { width: 0; }
+}
+
+@keyframes index-link-active {
+    0% { transform: perspective(1600px) rotateX(0) rotateY(0) translateZ(0); }
+    16% { transform: perspective(1600px) rotateX(10deg) rotateY(5deg) translateZ(32px); }
+    to { transform: perspective(1600px) rotateX(0) rotateY(0) translateZ(65px); }
+}
+
+.flame {
+    display: inline-block;
+    font-size: 1.5rem;
+    animation: flameWave 1s ease-in-out infinite;
+    margin: 0 5px;
+}
+
+ul.skill li .progress div {
+    animation: progressin 7s;
+}
