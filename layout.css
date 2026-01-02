@@ -1,0 +1,81 @@
+/*
+  (｡♥‿♥｡)
+  哎呀~ 被我发现了！
+  不要偷偷复制CSS啦！
+  ʕ •ᴥ•ʔ
+  自己写才有成就感哦~
+  ヾ(≧▽≦*)o
+*/
+
+#startrack {
+    height: 140%;
+    width: 100%;
+    display: block;
+}
+
+.background.fixed {
+    position: fixed;
+    top: -60%;
+    z-index: 1;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.background .cover {
+    position: absolute;
+    bottom: -42%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(10, 10, 30, 0.95) 30%, rgba(10, 10, 30, 0));
+}
+
+.ch {
+    width: 100%;
+    padding: 80px 0;
+    animation: fadedown 1s cubic-bezier(.19, 1, .22, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.intro {
+    color: #fff;
+    height: 100vh;
+    padding: 0;
+}
+
+.intro .container {
+    animation: fadedown 3.5s cubic-bezier(.19, 1, .22, 1);
+}
+
+.meteor-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#meteorCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
