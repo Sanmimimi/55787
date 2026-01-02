@@ -1,0 +1,266 @@
+/*
+  ₍ ᐢ.ˬ.ᐢ₎
+  咦？发现了什么？
+  这是我精心设计的CSS呢~
+  (๑•̀ㅂ•́)و✧
+  请不要直接拿走哦！
+  ଘ(੭ˊᵕˋ)੭* ੈ✩‧₊
+*/
+
+nav {
+    position: fixed;
+    left: 20px;
+    bottom: 0;
+    z-index: 2333;
+    transform: rotate(-90deg) translateZ(0);
+    transform-origin: 0 0;
+    transition: all .3s ease-out;
+    vertical-align: middle;
+    font-family: Roboto, Tahoma, Consolas, Microsoft YaHei;
+}
+
+nav a.clip {
+    height: 3px;
+    width: 3px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    opacity: .4;
+    transition: all .3s;
+    vertical-align: middle;
+}
+
+nav a.time {
+    opacity: 1;
+}
+
+nav a.active, nav a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.ch h2.chtitle {
+    padding-bottom: 30px;
+    font-size: 26px;
+    letter-spacing: .2em;
+    color: hsla(0, 0%, 100%, .5);
+}
+
+.ch h2.chtitle span {
+    color: #fff;
+}
+
+.ch h2.chtitle:after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 5px;
+    background-color: hsla(0, 0%, 100%, .5);
+    margin-top: 30px;
+}
+
+.hello {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+}
+
+.hello h1, .hello h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5em;
+    letter-spacing: .2em;
+}
+
+.hello h1 {
+    font-size: 42px;
+    letter-spacing: .5em;
+}
+
+.hello h2 {
+    padding-top: .6em;
+}
+
+.hello .circle {
+    float: left;
+    margin-right: 10px;
+    letter-spacing: 0;
+}
+
+.hello .circle span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.hello .circle span:first-child {
+    background-color: #ff493f;
+}
+
+.hello .circle span:nth-child(2) {
+    background-color: #f7c900;
+}
+
+.hello .circle span:nth-child(3) {
+    background-color: #00ff37;
+}
+
+.countdown-section {
+    text-align: center;
+}
+
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.countdown-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px 25px;
+    min-width: 140px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.countdown-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+.countdown-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.countdown-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+    position: relative;
+    z-index: 2;
+}
+
+.countdown-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+.countdown-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.countdown-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.encouragement {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: encouragementBounce 2s ease-in-out infinite;
+}
+
+.time-display {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.current-time {
+    font-weight: 700;
+    color: #fff;
+    font-variant-numeric: tabular-nums;
+    margin-right: 12px;
+}
+
+.date-info, .week-info {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 8px;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer h3 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: .8em;
+    margin: 6px 0;
+}
+
+.footer p {
+    font-size: 12px;
+    letter-spacing: 1em;
+    opacity: .3;
+}
+
+.footer p.c {
+    margin-top: 20px;
+    letter-spacing: .1em;
+}
